@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Tarefas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #taskInput {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        #addTaskButton {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #addTaskButton:hover {
+            background-color: #218838;
+        }
+        #taskList {
+            list-style-type: none;
+            padding: 0;
+        }
+        #taskList li {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #taskList li.concluida {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .removeButton {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .removeButton:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Organizador de Tarefas</h1>
+    <input type="text" id="taskInput" placeholder="Digite uma nova tarefa">
+    <button id="addTaskButton">Adicionar Tarefa</button>
+    <ul id="taskList"></ul>
+
+    <script src="Prova_10_JS.js"></script>
+</body>
+</html>
